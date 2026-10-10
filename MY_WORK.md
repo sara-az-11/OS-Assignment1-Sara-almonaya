@@ -226,7 +226,7 @@ Start a bit earlier in the week to avoid rushing the video recording.
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[During this assignment, I learned how to create and manage Java threads using Runnable and Thread.start(). Using Thread.join() helped me understand how the main program waits for all processes to finish execution properly. I also saw how Thread.sleep() is used to simulate the time quantum in CPU scheduling. What surprised me the most was how smoothly multiple threads can run concurrently and interact with shared queues. Overall, it gave me a very clear practical view of how operating systems handle concurrency.]
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -234,7 +234,7 @@ Start a bit earlier in the week to avoid rushing the video recording.
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[The most challenging part of this assignment for me was figuring out how to track waiting times accurately without disrupting the existing Round-Robin scheduling logic. At first, calculating the correct turnaround time and waiting time using System.currentTimeMillis() was a bit confusing because processes switch back and forth multiple times. Managing Git commits properly and making sure everything compiled without any warnings also took some careful debugging.]
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -242,7 +242,7 @@ Start a bit earlier in the week to avoid rushing the video recording.
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I overcame these challenges by breaking down the code and reading through SchedulerSimulation.java line by line to understand how the queue handles processes. Whenever I hit an error or unexpected output, I used System.out.println statements to trace the values during the execution loop. Re-reading the README.md instructions carefully and testing my code after each small change also helped me catch mistakes early.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -250,20 +250,20 @@ Start a bit earlier in the week to avoid rushing the video recording.
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[Multithreading and CPU scheduling concepts are heavily used in real-world applications like modern web browsers, where each tab runs on a separate thread or process to prevent the whole browser from freezing. Mobile operating systems also use similar scheduling algorithms to manage background apps and keep the user interface responsive. Game development relies heavily on threads to handle graphics, physics, and user input simultaneously without lagging.]
 
 ### Optional: What would you like to learn more about?
 
 [Any topics related to threading or operating systems that you're curious about?]
-
+I would love to learn more about advanced CPU scheduling algorithms used in modern multi-core processors, such as multi-level feedback queues and real-time scheduling. I am also curious about how thread synchronization and mutex locks work in more complex multithreaded systems to avoid race conditions
 ### Optional: How confident do you feel about multithreading concepts now?
 
 [Beginner / Intermediate / Confident. What do you understand well? What needs more practice?]
-
+Confident. I now understand the basics of thread creation, management using Thread.start() and Thread.join(), and simulating time slices with Thread.sleep(). However, I feel I still need more practice with complex thread synchronization, deadlock prevention, and managing shared resources safely across multiple threads.
 ### Optional: Feedback on the assignment
 
 [Any comments? Was it helpful? Too easy or hard? Suggestions?]
-
+This assignment was extremely helpful in bridging the gap between theoretical operating systems concepts and practical programming in Java. It was challenging enough to make me thoroughly read and understand the code rather than just guessing. The step-by-step feature implementation made the learning process structured and rewarding.
 ---
 
 # Part C: Technical Answers (0.5 mark)
