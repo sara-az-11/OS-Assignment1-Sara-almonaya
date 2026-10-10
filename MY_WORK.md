@@ -129,96 +129,85 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
+### Entry 1 - [October 4, 2026, 3:00 PM]
 **What I did**:
-
+Forked the repository and set up my student ID.
 **Details**:
-
+Created a GitHub account with my university email, forked the starter repository, renamed it properly, and updated line 150 in SchedulerSimulation.java with my actual student ID.
 **Challenges**:
-
+Had to configure Git credentials and make sure the repository visibility was set to public.
 **Solution**:
-
+Logged into GitHub via the terminal and verified the repository settings on the website.
 **Time spent**:
-
+35 minutes.
 ---
 
-### Entry 2 - [Date and Time]
+### Entry 2 - [October 6, 2026, 4:15 PM]
 **What I did**:
-
+What I did: Implemented Feature 1 (Process Priority).
 **Details**:
-
+Added a random priority field (1-10) to the Process class using the student ID seed and displayed it when a process enters the ready queue without altering the FIFO order.
 **Challenges**:
-
+Making sure the priority generation didn't mess up the existing queue logic.
 **Solution**:
-
+Kept the queue structure strictly as FIFO and only printed the priority value as a display feature.
 **Time spent**:
-
+45 minutes.
 ---
 
-### Entry 3 - [Date and Time]
+### Entry 3 - [October 7, 2026, 6:30 PM]
 **What I did**:
-
+Implemented Feature 2 (Context Switch Counter).
 **Details**:
-
+Created a static counter variable and incremented it every time a new process started running, then printed the final total at the end of the simulation.
 **Challenges**:
-
+Figuring out the exact spot in the loop where a context switch officially occurs.
 **Solution**:
-
+Placed the increment right inside the scheduler loop where the next thread execution begins.
 **Time spent**:
-
+30 minutes.
 ---
 
-### Entry 4 - [Date and Time]
+### Entry 4 - [October 8, 2026, 5:00 PM]
 **What I did**:
-
+Implemented Feature 3 (Waiting Time Tracking and Summary Table).
 **Details**:
-
+Used System.currentTimeMillis() to calculate waiting times and turnaround times, and printed a formatted summary table at the end.
 **Challenges**:
-
+Aligning the table columns nicely in the console output.
 **Solution**:
-
+Used System.out.printf with proper spacing formatting to keep the table neat and readable.
 **Time spent**:
-
+1 hour.
 ---
 
-### Entry 5 - [Date and Time]
+### Entry 5 - [October 9, 2026, 8:00 PM]
 **What I did**:
-
+Completed documentation, answered reflection and technical questions, and recorded the demo video.
 **Details**:
-
+Filled out all parts of MY_WORK.md, reviewed the code against the checklist, and recorded a 2.5-minute video demonstrating the features and IDE execution.
 **Challenges**:
-
+Ensuring the video length stayed strictly between 2 and 3 minutes.
 **Solution**:
-
+Scripted the main points beforehand and timed the recording before uploading it to Google Drive.
 **Time spent**:
+1.5 hours.
 
----
 
-### Entry 6 - [Optional - Date and Time]
-**What I did**:
 
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
-
----
 
 ## Development Log Summary
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [4.5 hours]
 
 **Most challenging part**:
-
+Calculating the waiting time correctly and formatting the final summary table.
 **Most interesting learning**:
-
+Seeing how real multithreading and CPU scheduling algorithms operate in Java.
 **What I would do differently next time**:
-
+Start a bit earlier in the week to avoid rushing the video recording.
 ---
 
 # Part B: Reflection (0.5 mark)
