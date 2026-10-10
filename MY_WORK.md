@@ -282,7 +282,7 @@ This assignment was extremely helpful in bridging the gap between theoretical op
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[A process is an independent program execution with its own memory space, whereas a thread is a smaller unit of execution that shares memory and resources within a process. In this assignment, we used Java threads because they have much lower creation overhead and allow fast communication compared to spawning separate processes. We can clearly see this in our code where each simulated process runs inside a new Java thread (new Thread(process)).]
 
 ## Question 2: Ready Queue Behavior
 
@@ -294,7 +294,11 @@ This assignment was extremely helpful in bridging the gap between theoretical op
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[When a process does not finish within its assigned time quantum, it is paused and placed back at the end of the ready queue to wait for its next turn. For example, in my program output, process P3 had a large burst time and was re-queued multiple times before finishing its execution. Re-queuing is essential for fairness because it ensures that no single process monopolizes the CPU and every task gets a fair share of processing time.
+
+Example from my output: Process P3 added to ready queue (Burst: 8, Priority: 7)
+
+Explanation of example: This snippet shows the process being re-inserted into the queue when its time slice expires before completion.]
 
 Example from my output:
 ```
@@ -313,15 +317,15 @@ Example from my output:
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
 1. **New**: [When is P1 in the New state?]
-
+P1 is in the New state when it is instantiated as an object using the Process class constructor before the thread starts.
 2. **Runnable**: [When does P1 become Runnable?]
-
+P1 becomes Runnable when the thread is created and thread.start() is called, placing it ready for the scheduler.
 3. **Running**: [When is P1 Running?]
-
+P1 enters the Running state when the CPU scheduler selects it from the queue and its run() method executes.
 4. **Waiting**: [When and why would a thread be Waiting?]
-
+P1 enters a waiting or sleeping state when Thread.sleep() is called to simulate the execution slice or time quantum.
 5. **Terminated**: [When is P1 Terminated?]
-
+P1 reaches the Terminated state after its remaining burst time hits zero and its execution finishes completely.
 ## Question 4: Real-World Applications
 
 **Question**: Give **TWO** real-world examples where Round-Robin scheduling with threads would be useful. **At least one** must be an operating-system-level scenario (e.g., how an OS scheduler shares CPU time among running programs). The second can be any application you choose. For each, explain what the system is and **why Round-Robin fits** (fairness, responsiveness, predictability).
